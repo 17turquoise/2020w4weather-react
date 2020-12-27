@@ -1,0 +1,25 @@
+.City {
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  max-width: 600px;
+  margin: 30px auto;
+  margin-bottom: 0;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+.City h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.City p {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 19px;
+}

@@ -1,0 +1,26 @@
+.Hourly h3 {
+  color: #ffffff;
+  font-size: 20px;
+  position: relative;
+  left: 3px;
+}
+.Hourly p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.Hourly img {
+  display: block;
+  margin: 0 auto;
+  height: 77px;
+  position: relative;
+  right: 5px;
+}
+.Hourly p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}

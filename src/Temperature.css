@@ -1,0 +1,18 @@
+.Temperature img {
+  margin-right: 5px;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  bottom: 25px;
+}
+.Temperature strong {
+  color: rgb(32, 33, 36);
+  line-height: 1;
+  font-size: 67px;
+  font-weight: 400;
+}
+.Temperature .units {
+  position: relative;
+  font-size: 20px;
+  top: -34px;
+}

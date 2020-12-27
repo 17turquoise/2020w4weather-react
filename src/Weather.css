@@ -1,0 +1,13 @@
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+.Weather li {
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 19px;
+}
