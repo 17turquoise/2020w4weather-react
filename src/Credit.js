@@ -14,7 +14,7 @@ export default function Credit() {
         </a>
         and is
         <a
-          href="https://github.com/17turquoise/Weather-WkHr-App"
+          href="https://github.com/17turquoise/2020w4weather-react"
           target="”_blank”"
         >
           open-sourced on GitHub
