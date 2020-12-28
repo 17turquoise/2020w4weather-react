@@ -20,10 +20,7 @@ export default function Credit() {
           open-sourced on GitHub
         </a>
         and hosted on
-        <a
-          href="https://app.netlify.com/sites/brave-ardinghelli-16d308/overview"
-          target="”_blank”"
-        >
+        <a href="https://adoring-raman-afda76.netlify.app/" target="”_blank”">
           Netlify.
         </a>
       </small>
