@@ -13,13 +13,7 @@ export default function Temperature() {
         <div class="float-left">
           <strong>11 </strong>
           <span className="units">
-            <a hfer="#top" id="celsius-link" class="active">
-              ˚C
-            </a>{" "}
-            |
-            <a hfer="#top" id="fahrenheit-link">
-              ˚F
-            </a>
+            <span class="active">˚C</span> |<span>˚F</span>
           </span>
         </div>
       </div>
