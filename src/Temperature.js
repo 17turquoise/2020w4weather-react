@@ -11,7 +11,7 @@ export default function Temperature() {
           class="float-left"
         />
         <div class="float-left">
-          <strong>11 </strong>
+          <strong>11</strong>
           <span className="units">
             <span class="active">˚C</span> |<span>˚F</span>
           </span>

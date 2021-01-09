@@ -12,14 +12,14 @@ export default function Credit() {
         >
           Ina Pae
         </a>
-        &nbsp; and is&nbsp;
+        &nbsp;and is&nbsp;
         <a
           href="https://github.com/17turquoise/2020w4weather-react"
           target="”_blank”"
         >
           open-sourced on GitHub
         </a>
-        &nbsp; and hosted on&nbsp;
+        &nbsp;and hosted on&nbsp;
         <a href="https://adoring-raman-afda76.netlify.app/" target="”_blank”">
           Netlify.
         </a>
