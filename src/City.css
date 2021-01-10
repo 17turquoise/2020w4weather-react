@@ -39,12 +39,9 @@
   line-height: 19px;
 }
 
-.City img {
+.City canvas {
   margin-right: 5px;
-  height: 120px;
-  width: 120px;
-  position: relative;
-  bottom: 25px;
+  display: inline-block;
 }
 .City strong {
   color: rgb(32, 33, 36);
@@ -55,6 +52,6 @@
 .City .units {
   position: relative;
   line-height: 1;
-  font-size: 20px;
+  font-size: 18px;
   top: -28px;
 }
