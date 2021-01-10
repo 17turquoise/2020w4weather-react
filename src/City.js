@@ -18,7 +18,7 @@ export default function City(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl: "http://openweathermap.org/img/wn/02n@2x.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       visibility: response.data.visibility / 1000,
     });
   }
@@ -28,7 +28,7 @@ export default function City(props) {
     axios.get(apiUrl).then(handleResponse);
   }
   function handleSubmit(event) {
-    event.preventDefualt();
+    event.preventDefault();
     search();
     //search for a city
   }
