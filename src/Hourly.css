@@ -2,7 +2,7 @@
   color: #ffffff;
   font-size: 20px;
   position: relative;
-  left: 3px;
+  left: 5px;
 }
 .Hourly p {
   margin-top: 10px;
@@ -11,9 +11,9 @@
 .Hourly img {
   display: block;
   margin: 0 auto;
-  height: 77px;
+  height: 70px;
   position: relative;
-  right: 5px;
+  right: 15px;
 }
 .Hourly p {
   text-align: center;

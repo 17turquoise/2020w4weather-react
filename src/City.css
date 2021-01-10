@@ -12,16 +12,16 @@
   font-size: 34px;
   font-weight: 100;
   line-height: 28px;
-  margin: 10px 5px;
+  margin: 15px 5px 10px;
 }
 
 .City p {
   list-style: none;
   margin-left: 12px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
   padding: 0px;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 100;
   line-height: 19px;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./City.css";
+import ActualTime from "./ActualTime";
 import Search from "./Search";
 import Hourly from "./Hourly";
 import axios from "axios";
@@ -7,10 +8,9 @@ import axios from "axios";
 export default function City(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
-      date: "Sunday 07:00",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -25,15 +25,20 @@ export default function City(props) {
     return (
       <div className="City">
         <Search />
+
         <h1> {weatherData.city}</h1>
-        <p>Last updated: {weatherData.date}</p>
+        <p>
+          <ActualTime date={weatherData.date} />
+        </p>
         <div className="row">
           <div className="col-6">
             <ul>
-              <li className="text-capitalize">{weatherData.description}</li>
+              <li className="text-capitalize">
+                Condition: {weatherData.description}
+              </li>
               <li>Humidity: {weatherData.humidity} %</li>
-              <li>Wind: {weatherData.wind} km/h</li>
               <li>Visibility: {weatherData.visibility} km</li>
+              <li>Wind: {Math.round(weatherData.wind)} km/h</li>
             </ul>{" "}
           </div>
           <div className="col-6">
@@ -59,6 +64,7 @@ export default function City(props) {
     let apiKeys = "7dc7836f71a474945c8b68b188f0066c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKeys}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+
     return "Loading...";
   }
 }
