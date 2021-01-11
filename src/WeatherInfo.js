@@ -1,5 +1,6 @@
 import React from "react";
 import ActualTime from "./ActualTime";
+import ActualDate from "./ActualDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
@@ -11,19 +12,22 @@ export default function WeatherInfo(props) {
       <h2>
         <ActualTime date={props.data.date} />
       </h2>
+      <h3>
+        <ActualDate date={props.data.date} />
+      </h3>
 
       <div className="row">
-        <div className="col-6">
+        <div className="col">
           <ul>
             <li className="text-capitalize">
-              Condition: {props.data.description}
+              Condition : {props.data.description}
             </li>
-            <li>Humidity: {props.data.humidity} %</li>
-            <li>Visibility: {props.data.visibility} km</li>
-            <li>Wind: {Math.round(props.data.wind)} km/h</li>
+            <li>Humidity : {props.data.humidity} %</li>
+            <li>Visibility : {props.data.visibility} km</li>
+            <li>Wind : {Math.round(props.data.wind)} km/h</li>
           </ul>{" "}
         </div>
-        <div className="col-6">
+        <div className="col">
           <div className="row">
             <div className="float-left">
               <WeatherIcon

@@ -19,9 +19,16 @@ export default function ActualTime(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  let timePeriod;
+  if (hours < 12) {
+    timePeriod = "a.m.";
+  } else {
+    timePeriod = "p.m.";
+  }
+
   return (
     <div>
-      {day} {hours}:{minutes}
+      {day} {hours}:{minutes} {timePeriod}
     </div>
   );
 }

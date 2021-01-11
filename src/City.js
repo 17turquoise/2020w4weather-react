@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./City.css";
 import WeatherInfo from "./WeatherInfo";
-
-import Hourly from "./Hourly";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import { Form } from "react-bootstrap";
 
@@ -59,9 +58,10 @@ export default function City(props) {
             </div>{" "}
           </div>
         </Form>
-
-        <WeatherInfo data={weatherData} />
-        <Hourly />
+        <div>
+          <WeatherInfo data={weatherData} />
+          <WeatherForecast city={weatherData.city} />
+        </div>
       </div>
     );
   } else {
