@@ -27,6 +27,7 @@ export default function WeatherInfo(props) {
             <li>Wind : {Math.round(props.data.wind)} km/h</li>
           </ul>{" "}
         </div>
+
         <div className="col">
           <div className="row">
             <div className="float-left">

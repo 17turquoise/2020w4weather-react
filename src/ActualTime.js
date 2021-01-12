@@ -11,6 +11,7 @@ export default function ActualTime(props) {
     "Saturday",
   ];
   let day = days[props.date.getDay()];
+
   let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -27,8 +28,8 @@ export default function ActualTime(props) {
   }
 
   return (
-    <div>
-      {day} {hours}:{minutes} {timePeriod}
+    <div className="ActualTime">
+      Last updated: {day} {hours}:{minutes} {timePeriod}
     </div>
   );
 }
